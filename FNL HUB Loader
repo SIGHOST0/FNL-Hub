@@ -1,0 +1,59 @@
+local Loader = loadstring(game:HttpGet('https://raw.githubusercontent.com/toxicity-561/Loader/refs/heads/main/source.luau'))()
+
+Loader:AddTheme({
+    NAMEOFTHEME = "FNL HUB",
+    Color1 = Color3.fromRGB(170, 220, 255),
+    Color2 = Color3.fromRGB(15, 30, 60),
+    ["Color3"] = Color3.fromRGB(110, 180, 255),
+    Accent = Color3.fromRGB(0, 85, 255),
+    Accent2 = Color3.fromRGB(210, 240, 255),
+    ToggleCircle = Color3.fromRGB(170, 220, 255),
+    ToggleSwitch = Color3.fromRGB(10, 25, 55),
+    ButtonContainer = Color3.fromRGB(18, 35, 70),
+    ToggleContainer = Color3.fromRGB(18, 35, 70),
+})
+
+Loader:SetupConfig({
+    EnableXButton = true,
+    EnableMiniButton = false,
+    ClickSound = "rbxassetid://88442833509532"
+})
+
+local Window = Loader:AddWindow({
+    Title = "FNL HUB Loader",
+    Theme = "Red"
+})
+
+local muscleLegendsTab = Window:AddTab({
+    GameName = "Muscle Legends",
+    ScrollTab = true
+})
+
+muscleLegendsTab:AddButton({
+    Name = "Execute Public Script",
+    Callback = function()
+loadstring(game:HttpGet'https://api.rubis.app/v2/scrap/ihcqeeobhrv8c6mE/raw')()
+    Window:DLoader()
+    end
+})
+
+muscleLegendsTab:AddButton({
+  Name = "Execute Murder Mystery",
+  Callback = function()
+loadstring(game:HttpGet'https://api.rubis.app/v2/scrap/J2E6nmYy5V7mcoBw/raw')()
+      Window:DLoader()
+  end
+})
+
+local legendsOfSpeedTab = Window:AddTab({
+    GameName = "Legends of Speed",
+    ScrollTab = true
+})
+
+legendsOfSpeedTab:AddButton({
+    Name = "Execute Script",
+    Callback = function()
+loadstring(game:HttpGet'https://api.rubis.app/v2/scrap/CKGW5cMyEc0Q5bLn/raw')()
+    Window:DLoader()
+    end
+})
